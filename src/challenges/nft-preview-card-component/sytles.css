@@ -31,7 +31,8 @@ main {
   flex-direction: column;
   gap: 1.25rem;
   border-radius: 1rem;
-  max-width: 18rem;
+  min-width: 18rem;
+  width: 18rem;
 
   background-color: var(--card-bg-color);
   padding: 1.5rem;
