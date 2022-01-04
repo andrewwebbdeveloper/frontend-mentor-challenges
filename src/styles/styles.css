@@ -51,9 +51,19 @@ a {
   text-decoration: none; /* no underline */
 }
 
+.github-link > img {
+  width: 2rem;
+  transition: 0.1s ease-in-out;
+}
+
+.github-link > img:hover {
+  transform: rotate(25deg);
+}
+
 .navbar {
   font-family: "Raleway", sans-serif;
   display: flex;
+  justify-content: space-between;
   padding: 1rem;
   font-size: 2rem;
   background-color: var(--white);
@@ -64,10 +74,18 @@ a {
   .navbar {
     font-size: 1.5rem;
   }
+
+  .github-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 490px) {
   .navbar {
     font-size: 1rem;
+  }
+
+  .github-link {
+    display: none;
   }
 }
