@@ -11,5 +11,19 @@ a {
   font-family: "Raleway", sans-serif;
   display: flex;
   padding: 1rem;
-  background-color: rgb(247, 242, 249);
+  font-size: 2rem;
+  background-color: rgba(250, 244, 252, 0.934);
+  color: #333;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .navbar {
+    font-size: 1rem;
+  }
 }
