@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap");
+
+:root {
+  --soft-blue-color: hsl(215, 51%, 70%);
+  --cyan-color: hsl(178, 100%, 50%);
+  --cyan-color-transparent: hsl(178, 100%, 50%, 0.5);
+
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --blue-line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+
+main {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--white-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 1rem;
+  max-width: 18rem;
+
+  background-color: var(--card-bg-color);
+  padding: 1.5rem;
+}
+
+.image-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.5rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+.overlay {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+
+  transition: 0.3s ease-in-out;
+  background-color: var(--cyan-color-transparent);
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+
+.title:hover {
+  color: var(--cyan-color);
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--soft-blue-color);
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+.stats {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--blue-line-color);
+}
+
+.stats > h6 {
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.eth-count {
+  color: var(--cyan-color);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.time-remaining {
+  font-weight: 300;
+  color: var(--soft-blue-color);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 300;
+  color: var(--soft-blue-color);
+}
+
+.name {
+  color: var(--white-color);
+  transition: 0.1s ease-in-out;
+}
+
+.name:hover {
+  color: var(--cyan-color);
+  cursor: pointer;
+}
+
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  outline: 1px solid var(--white-color);
+}

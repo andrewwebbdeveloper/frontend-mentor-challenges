@@ -6,12 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="./sytles.css" />
     <title>NFT Preview Card Component</title>
   </head>
   <body>
     <include src="src/partials/header.html"></include>
-    <a href="/src/page/home/index.html">
-      <h1>challenges</h1>
-    </a>
+    <main>
+      <article class="card">
+        <div class="image-box">
+          <img
+            class="image"
+            src="images/image-equilibrium.jpg"
+            alt="equilimbrium image"
+          />
+          <div class="overlay"><img src="images/icon-view.svg" alt="" /></div>
+        </div>
+        <h4 class="title">Equilibrium #3429</h4>
+        <h5 class="subtitle">
+          Our Equillibrium collection promotes balance and calm.
+        </h5>
+        <span class="stats">
+          <h6 class="eth-count">
+            <img src="images/icon-ethereum.svg" alt="ethereum icon" />0.041ETH
+          </h6>
+          <h6 class="time-remaining">
+            <img src="images/icon-clock.svg" alt="clock icon" />3 days left
+          </h6>
+        </span>
+        <span class="person">
+          <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+          <p>Creation of <span class="name">Jules Wyvern</span></p>
+        </span>
+      </article>
+    </main>
   </body>
 </html>
