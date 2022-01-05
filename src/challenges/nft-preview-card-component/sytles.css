@@ -131,5 +131,5 @@ main {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
-  outline: 1px solid var(--white-color);
+  border: 1px solid var(--white-color);
 }
