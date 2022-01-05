@@ -78,6 +78,10 @@ a {
 }
 
 @media screen and (max-width: 575px) {
+  .home-page-main {
+    font-size: 1.5rem;
+  }
+
   .navbar {
     font-size: 1.5rem;
   }
@@ -92,6 +96,11 @@ a {
 }
 
 @media screen and (max-width: 490px) {
+  .home-page-main {
+    padding: 2.5rem;
+    font-size: 1.25rem;
+  }
+
   .navbar {
     font-size: 1rem;
   }
@@ -105,6 +114,11 @@ a {
 }
 
 @media screen and (max-width: 312px) {
+  .home-page-main {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
   .navbar {
     font-size: 0.8rem;
   }
@@ -114,6 +128,11 @@ a {
 }
 
 @media screen and (max-width: 241px) {
+  .home-page-main {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+
   .navbar {
     font-size: 0.5rem;
   }
