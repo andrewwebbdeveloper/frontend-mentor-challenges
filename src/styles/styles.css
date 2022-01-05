@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap); */
 
 :root {
   --white: rgba(250, 244, 252, 0.934);
@@ -17,6 +17,17 @@ h6 {
 body {
   height: 100%;
   margin: 0;
+}
+
+.home-page-main {
+  padding: 5rem;
+  width: 100vw;
+  height: 100vh;
+
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(
@@ -25,14 +36,6 @@ body {
     rgba(65, 28, 85, 1) 59%,
     rgba(0, 0, 0, 1) 99%
   );
-}
-
-main {
-  margin: 5rem;
-
-  color: var(--white);
-  font-size: 2rem;
-  font-family: "Raleway", sans-serif;
 }
 
 .challenge-list > li {
@@ -75,6 +78,10 @@ a {
     font-size: 1.5rem;
   }
 
+  .frontend-mentor-logo {
+    width: 8rem;
+  }
+
   .github-link {
     display: none;
   }
@@ -84,8 +91,38 @@ a {
   .navbar {
     font-size: 1rem;
   }
+  .frontend-mentor-logo {
+    width: 6rem;
+  }
 
   .github-link {
     display: none;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .navbar {
+    font-size: 0.8rem;
+  }
+  .frontend-mentor-logo {
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 241px) {
+  .navbar {
+    font-size: 0.5rem;
+  }
+  .frontend-mentor-logo {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 171px) {
+  .navbar {
+    font-size: 0.3rem;
+  }
+  .frontend-mentor-logo {
+    width: 2rem;
   }
 }
