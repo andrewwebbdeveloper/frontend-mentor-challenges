@@ -25,6 +25,7 @@ body {
   color: var(--white);
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
+  font-style: italic;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -69,6 +70,11 @@ a {
   font-size: 2rem;
   background-color: var(--white);
   color: #333;
+}
+
+.navbar h1 {
+  font-weight: 400;
+  font-style: italic;
 }
 
 @media screen and (max-width: 575px) {
